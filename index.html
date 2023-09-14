@@ -1,1 +1,60 @@
-GraphQL
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>GraphQL</title>
+</head>
+<body>
+  <div class="login-container">
+    <div id="login-form">
+        <h1>01 Login Page</h1>
+        <input type="text" id="username" placeholder="Username or Email"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <button id="login-button">Login</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+</div>
+</div>
+<div class="profile-container">
+  <div id="profile-page" style="display: none;">
+    <h1>Welcome to Your Profile <span id="full-name"></span></h1>
+    <button id="logout-button">Logout</button>
+    <br>
+    <br>
+    <div id="user-info">
+      <h3 id="username"></h3>
+      <div class="user-data">
+      </div>
+      <br>
+      <div class="user-data">
+        <p id="user-email">Loading...</p>
+      </div>
+      <div class="user-data">
+        <label>AUDIT RATIO</label>
+        <p id="audit-ratio">Loading...</p>
+      </div>
+      <div class="user-data">
+        <label>XP done ⬆</label>
+        <p id="xp-done">Loading...</p>
+      </div>
+      <div class="user-data">
+        <label>XP received ⬇</label>
+        <p id="xp-received">Loading...</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+  <div id="statistics">
+    <svg id="bar-chart" width="800" height="400"></svg>
+    <svg id="donut-chart" width="400" height="400"></svg>
+  </div>
+  <script src="/static/main.js"></script>
+  <script src="/static/graph.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</body>
+</html>
+
