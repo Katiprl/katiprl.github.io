@@ -79,7 +79,7 @@ function logout() {
     localStorage.removeItem('jwt');
     setCookie('jwt', '', -1); 
 
-    window.location.href = 'login.html'; 
+    window.location.href = 'https://katiprl.github.io./'; 
 }
 
 
